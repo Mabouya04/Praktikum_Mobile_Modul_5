@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/MakeUpListFragment">
+
+    <fragment
+        android:id="@+id/MakeUpListFragment"
+        android:name="com.example.valorantapp.ui.MakeUpListFragment"
+        android:label="ValoAgentListFragment" >
+        <action
+            android:id="@+id/action_MakeUpListFragment_to_MakeUpDetailFragment"
+            app:destination="@id/MakeUpDetailFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/MakeUpDetailFragment"
+        android:name="com.example.valorantapp.ui.MakeUpDetailFragment"
+        android:label="ValoAgentDetailFragment" >
+        <action
+            android:id="@+id/action_MakeUpDetailFragment_to_MakeUpListFragment"
+            app:destination="@id/MakeUpListFragment" />
+    </fragment>
+</navigation>
